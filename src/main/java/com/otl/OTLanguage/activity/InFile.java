@@ -4,6 +4,7 @@ import lombok.extern.slf4j.Slf4j;
 
 import javax.swing.*;
 import java.awt.*;
+import java.io.File;
 
 /**
  * 파일을 읽어오는 클래스
@@ -24,5 +25,8 @@ public class InFile {
         log.info("파일 가져오기");
         log.info("파일 이름 = {}", fileName);
         log.info("파일 경로 = {}", fileContent);
+
+        File file = new File(fileContent);
+
     }
 }
